@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Alarm-Clock</h1>
 
-<p align="center"><img src="https://socialify.git.ci/Suzzit6/Alarm-Clock/image?description=1&amp;font=Jost&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;theme=Dark" alt="project-image"></p>
+<p align="center"><img src="https://socialify.git.ci/Suzzit6/Alarm-Clock/image?description=1&font=Jost&language=1&name=1&owner=1&pattern=Solid&theme=Dark" alt="Alarm-Clock" width="640" height="320" /></p>
 
 <p id="description">Alarm-Clock made using HTMLCSS and Javascript (My first Javascript Project)</p>
 

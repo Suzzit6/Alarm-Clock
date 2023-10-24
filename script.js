@@ -31,8 +31,9 @@ function timedifference() {
     return secondsleft = enteredseconds - currentTotalseconds
   }
   else {
-    return secondsleft = 24 * 3600 - currentTotalseconds + enteredseconds
+     secondsleft = 24 * 3600 - currentTotalseconds + enteredseconds
   }
+  return secondsleft*1000;
 }
 
 let audio;

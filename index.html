@@ -5,18 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Alarm Setter</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
-  <div class="alarm" id="alarm1">
-  <label for="appt" class="text" id="set-alarm">SET ALARM:</label>
-
-  <input type="time" id="appt" class="text1" name="appt" min="09:00" max="18:00" required />
-    <button type="button" class="btn btn-success"  id="btn" >Set</button>
+  <div class="card text-center mb-3" style="width: 23rem; height: 15rem;" >
+  <div class="alarm card-body" id="alarm1">
+  <h4 for="appt" class="text card-title" id="set-alarm">SET ALARM</h4>
+  <p id="currenttiming"></p>
+  <input type="time" id="appt1" class="text1" name="appt" min="09:00" max="18:00" required />
+    <a href="#" class="set-btn btn btn-primary"  id="btn" >Set</a>
     <label id="alert" class="alert">Alarm set Successfully</label>
     </div>
+     </div>
+    
   <div class="image"  id="image">
   </div>
   <button class="btnstop btn btn-warning" id="btnstop">Stop</button>

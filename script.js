@@ -4,7 +4,22 @@ let alert = document.getElementById("alert")
 image.style.display = 'none'
 btnstop.style.display = 'none'
 alert.style.display = 'none'
-alert.style.color = 'white'
+alert.style.color = 'black'
+
+
+
+
+ setInterval(() =>{
+   let currenttime1 = new Date();
+   let currenttimings = document.getElementById("currenttiming");
+   const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+   
+
+   currenttimings.innerHTML = `${currenttime1.getHours()}:${currenttime1.getMinutes()}:${currenttime1.getSeconds()}<br>${months[currenttime1.getMonth()]} ${currenttime1.getDate()} `
+
+ },1000)
+
+
 
 function timetoseconds(time) {
   let parts = time.split(':');
@@ -15,25 +30,26 @@ function timetoseconds(time) {
   }
 }
 function timedifference() {
-  let timepicker = document.getElementById("appt").value
-  let setbtn = document.getElementById("btn")
-  let enteredtime = timepicker
   let currenttime = new Date();
-  let currenthours = currenttime.getHours();
-  let currentminutes = currenttime.getMinutes();
-  let currentseconds = currenttime.getSeconds();
+   let currenthours = currenttime.getHours()
+   let currentminutes = currenttime.getMinutes();
+   let currentseconds = currenttime.getSeconds();
+  let timepicker = document.getElementById("appt1").value
+  let setbtn = document.getElementById("btn");
+  let enteredtime = timepicker;
+
 
   let enteredseconds = timetoseconds(enteredtime);
-  let currentTotalseconds = currenthours * 3600 + currentminutes * 60 + currentseconds + enteredseconds;
+  let currentTotalseconds = currenthours * 3600 + currentminutes * 60 + currentseconds ;
 
   let secondsleft;
   if (enteredseconds >= currentTotalseconds) {
-    return secondsleft = enteredseconds - currentTotalseconds
+     secondsleft = enteredseconds - currentTotalseconds
   }
   else {
-     secondsleft = 24 * 3600 - currentTotalseconds + enteredseconds
+     secondsleft = (24 * 3600 - currentTotalseconds) + enteredseconds
   }
-  return secondsleft*1000;
+  return secondsleft * 1000;
 }
 
 let audio;
@@ -66,11 +82,10 @@ setbtn.addEventListener("click", function() {
   alert.style.display = 'block'
   setTimeout(() =>{
     alert.style.display = 'none'
-  },3000)
-  
+    },3000)
+    console.log(timedifference())
   setTimeout(() => {
     alarm()
   }, timedifference())
 })
-
-
+  

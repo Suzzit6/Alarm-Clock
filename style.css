@@ -4,20 +4,20 @@ html {
 }
 
 label {
-  display: block;
+  /* display: block; */
   font:
     1rem 'Fira Sans',
     sans-serif;
 }
-
+/* 
 input,
 label {
   margin: 0.4rem 0;
-}
+} */
 
 body {
   display: flex;
-  align-items: flex-start;
+  align-items:flex-start;
   justify-content: center;
   min-height: 100vh;
   /* background-image: url(https://i.imgur.com/MtqNDl1.png); */
@@ -25,6 +25,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
   
 }
 .image{
@@ -41,31 +42,37 @@ body {
   position:absolute;
   top: 700px;
 }
-
-.alarm {
-  width: 304px;
-  height: 200px;
-  text-align: center;
-  /* font-size: 2rem; */
-  margin-top: 100px;
+.card{
+  position:absolute;
+  top:75px;
 }
 
-.text {
+.alarm {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  /* margin-top: 100px; */
+  /* position:absolute;
+  top:20px; */
+}
+
+/* .text {
   font-size: 3rem;
   color: white;
   font-family: 'Helvetica';
   font-weight: 600;
 
 }
-
+ */
 .text1 {
   font-size: 1.2rem;
 }
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
-}
-.alert{
+} */
+/* .alert{
   height: 100%;
   width: 100%;
   position:absolute;
@@ -73,5 +80,22 @@ body {
   left:10px;
   animation: fadeIn,2s;
 }
-
+ */
+.text1 {
+  width:150px;
+  position:absolute;
+  bottom: 60px;
+  left: 89px;
+}
+.set-btn {
+  position:absolute;
+  bottom: 55px;
+  left: 250px;
+}
+.alert {
+  position:absolute;
+  bottom: 4px;
+  left: 85px;
+  
+}
 
